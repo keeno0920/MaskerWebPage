@@ -165,3 +165,119 @@ ul.checks li::before {
   font-size: 14px;
 }
 .site-footer a { color: var(--muted); margin-right: 16px; }
+
+/* ヒーローの複数アクション */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.btn-sub {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+.btn-sub:hover { opacity: 0.92; }
+
+/* ヘッダーのCTA（無料ダウンロード） */
+.nav-cta {
+  background: var(--brand);
+  color: #fff !important;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+.nav-cta:hover { background: var(--brand-dark); color: #fff !important; }
+
+/* 3ステップ */
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* 比較表 */
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.compare th,
+.compare td {
+  border-bottom: 1px solid var(--line);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.compare th { background: var(--soft); }
+.compare tbody tr:last-child th,
+.compare tbody tr:last-child td { border-bottom: none; }
+
+/* 最終CTA */
+.final-cta {
+  background: linear-gradient(160deg, var(--brand), var(--brand-dark));
+  color: #fff;
+  text-align: center;
+}
+.final-cta h2 { color: #fff; }
+.final-cta p { opacity: 0.95; margin-bottom: 22px; }
+
+/* カードリンク */
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.card-link:hover {
+  border-color: var(--brand);
+  transform: translateY(-1px);
+}
+
+/* サブページのヒーロー / 記事 */
+.page-hero {
+  background: linear-gradient(160deg, var(--brand), var(--brand-dark));
+  color: #fff;
+  padding: 48px 0 40px;
+}
+.page-hero h1 { font-size: 28px; line-height: 1.4; margin: 0; }
+.article h2 { margin-top: 32px; font-size: 20px; }
+.article p, .article li { color: #303544; }
+.article ul { padding-left: 22px; }
+.article-cta {
+  margin-top: 36px;
+  padding: 24px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.article-cta p { margin: 0 0 16px; color: var(--muted); }
+
+/* モバイルでヘッダー・比較表が崩れないように */
+@media (max-width: 640px) {
+  .site-header .container {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+  .nav a { margin-left: 12px; font-size: 14px; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { text-align: center; }
+  .compare { font-size: 14px; }
+  .compare th, .compare td { padding: 10px 8px; }
+  .page-hero h1 { font-size: 23px; }
+}

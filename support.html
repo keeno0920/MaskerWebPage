@@ -3,9 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>サポート｜個人情報マスカー</title>
-  <meta name="description" content="個人情報マスカーのよくある質問とお問い合わせ先。サーバー送信なし・安全出力・自動検出の補助機能について。">
+  <title>使い方・よくある質問｜個人情報マスカー</title>
+  <meta name="description" content="個人情報マスカーの使い方とよくある質問。サーバー送信なし・端末内処理・候補検出・安全コピー出力について。">
+  <meta name="apple-itunes-app" content="app-id=6778686188">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="個人情報マスカー">
+  <meta property="og:title" content="使い方・よくある質問｜個人情報マスカー">
+  <meta property="og:description" content="個人情報マスカーの使い方とよくある質問。サーバー送信なし・端末内処理・候補検出・安全コピー出力について。">
+  <meta property="og:url" content="https://keeno0920.github.io/MaskerWebPage/support.html">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ファイルはサーバーに送信されますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "送信しません。OCR・顔検出・QR検出・マスク処理はすべて端末内で行います。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PDFの黒塗りは復元されませんか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "出力PDFは画像ベースの安全コピーとして作成し、元PDFのテキスト層・注釈・メタデータを引き継がない設計です。ただし自動検出は補助機能のため、出力前にご自身で内容をご確認ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "写真の位置情報（EXIF）は消えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "出力画像ではEXIFを引き継がない設計にしています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "何を自動検出できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "電話番号・メール・URL・郵便番号・住所候補・氏名ラベル周辺・顔・QR/バーコードなどを候補として検出します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "自動で完全に消せますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "完全な検出・削除を保証するものではありません。候補検出のあと、出力前にご自身で確認していただく設計です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "広告やトラッキングはありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "広告SDK・解析SDK・トラッキングは入れていません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Proでできることは？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "出力回数とPDFページ数が無制限になり、高画質出力・ユーザー辞書・すべての書類プリセット・複数ファイルの一括処理が使えます。買い切りです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "購入の復元はできますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "課金画面の「購入を復元」から、同じApple IDで購入済みのProを復元できます。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -13,8 +91,9 @@
       <a class="brand" href="index.html">個人情報マスカー</a>
       <nav class="nav">
         <a href="index.html">ホーム</a>
-        <a href="support.html">サポート</a>
+        <a href="support.html">使い方</a>
         <a href="privacy.html">プライバシー</a>
+        <a class="nav-cta" href="https://apps.apple.com/app/id6778686188">無料ダウンロード</a>
       </nav>
     </div>
   </header>
@@ -24,6 +103,11 @@
       <div class="container">
         <h2>サポート・よくある質問</h2>
         <p class="lead">ご不明な点は下記のQ&amp;Aをご確認ください。解決しない場合はお問い合わせください。</p>
+
+        <div class="article-cta" style="margin-top:20px;">
+          <p>アプリをまだインストールしていない方は、App Storeから無料でお試しできます。</p>
+          <a class="btn" href="https://apps.apple.com/app/id6778686188" style="background:var(--brand);color:#fff;">App Storeで無料ダウンロード</a>
+        </div>
 
         <div class="faq" style="margin-top:24px;">
           <details open>
@@ -79,7 +163,7 @@
         <h2>お問い合わせ</h2>
         <p>ご質問・ご要望は下記メールまでお寄せください。<br>
         （お問い合わせの際は、原本ファイルそのものは送らずに、状況をお知らせください。）</p>
-        <p><a class="btn" href="mailto:appjiajibu@gmail.com">appjiajibu@gmail.com にメール</a></p>
+        <p><a class="btn" href="mailto:appjiajibu@gmail.com" style="background:var(--brand);color:#fff;">appjiajibu@gmail.com にメール</a></p>
       </div>
     </section>
   </main>
@@ -88,6 +172,7 @@
     <div class="container">
       <a href="index.html">ホーム</a>
       <a href="privacy.html">プライバシーポリシー</a>
+      <a href="https://apps.apple.com/app/id6778686188">App Storeで無料ダウンロード</a>
       <a href="mailto:appjiajibu@gmail.com">お問い合わせ</a>
       <div style="margin-top:10px;">© 2026 個人情報マスカー</div>
     </div>
